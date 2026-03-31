@@ -15,6 +15,7 @@
       background-size: 100%;
       background-position: center;
       max-width: 1200px;
+      position: relative;
     }
 
     .hero {
@@ -78,15 +79,36 @@
       background-color: #4d0000;
       color: #bd6867;
     }
+    
+     .back {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      text-decoration: none;
+      color: #4d0000;
+      font-family: "Grandstander",   cursive;
+      font-weight: 600;
+      font-size: 1em;
+      padding: 5px 6px;
+      border: 2px solid #4d0000;
+      border-radius: 20px;
+      background-color: #a04746;
+    }
+
+    .back:hover {
+      text-decoration: underline;
+      color: #4d0000;
+    }
+    
   </style>
 </head>
+  
 <body>
 
+  <a href="index.html" class="back">← nvm</a>
   <div class="hero">
     <h1>cool, right this way...</h1>
-    <h2>
-      ...i think.
-    </h2>
+    <h2>...i think.</h2>
     <br>
     <p>what would you like to see?</p>
     <div class="buttons">
@@ -94,6 +116,6 @@
       <a href="memories.html">memories</a>
     </div>
   </div>
-
+  
 </body>
 </html>
