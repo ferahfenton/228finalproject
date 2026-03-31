@@ -54,33 +54,59 @@
 
     .buttons {
       margin: 30px auto;
-      width: 300px;
+      width: 600px;
     }
 
     .buttons a {
-      text-decoration: none;
-      padding: 14px 36px;
-      border: 2px solid #4d0000;
-      color: #4d0000;
-      font-family: "Grandstander", cursive;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-      font-size: 1.1em;
-      border-radius: 4px;
-    }
+  text-decoration: none;
+  padding: 14px 36px;
+  border: 2px solid #4d0000;
+  color: #4d0000;
+  font-family: "Grandstander", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1em;
+  border-radius: 4px;
+  margin-right: 20px;
+}
 
-    .buttons a:first-child {
-        margin-right: 20px;
-      }
-      
-    .buttons a:hover {
-      background-color: #4d0000;
-      color: #bd6867;
-    }
+.buttons a:last-child {
+  margin-right: 0;
+}
+
+.buttons a:hover {
+  background-color: #4d0000;
+  color: #bd6867;
+}
   </style>
 </head>
 <body>
+   <div class="wrapper">
+
+    <div class="hero">
+      <h1>These hobbies take up way too much space in here...</h1>
+      <p>So check em out!</p>
+      <div class="buttons">
+        <a href="#photos">photos</a>
+        <a href="#design">graphic design</a>
+        <a href="#visual">visual arts</a>
+      </div>
+    </div>
+
+    <div id="photos">
+      <h2>photos</h2>
+    </div>
+
+    <div id="design">
+      <h2>graphic design</h2>
+    </div>
+
+    <div id="visual">
+      <h2>visual arts</h2>
+    </div>
+
+  </div>
 
 </body>
 </html>
