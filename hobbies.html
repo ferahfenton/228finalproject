@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bonbon&family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bonbon&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Risque&display=swap" rel="stylesheet">
 
   <title>Ferah's Brain</title>
     <style>
@@ -90,10 +90,23 @@
       margin-right: 0;
       }
 
-    .buttons a:hover {
-      background-color: #4d0000;
-      color: #bd6867;
-      }
+   .button-design:hover {
+      background-color: #E8A838;
+      border: 2px solid #E8A838;
+      color: #4d0000;
+    }
+
+   .button-visual:hover {
+      background-color: #7B5EA7;
+      border: 2px solid #7B5EA7;
+      color: #4d0000;
+    }
+
+    .button-photos:hover {
+      background-color: #4A7C9E;
+      border: 2px solid #4A7C9E;
+      color: #4d0000;
+    }
       
     .back {
       position: absolute;
@@ -114,8 +127,8 @@
       text-decoration: underline;
     }   
       
-    .section-box {
-      background-color: rgba(77, 0, 0, 0.50);
+    .gsection-box {
+      background-color: rgba(232, 168, 56, 0.85);
       border-radius: 20px;
       border-width: 700px;
       padding: 20px;
@@ -123,22 +136,56 @@
       text-align: center;
   }
   
-  .section-box h2 {
-    font-family: "Bonbon", cursive;
-    font-weight: 550;
-    font-size: 3.5em;
+  .gsection-box h2 {
+    font-family: "Risque", serif;
+    font-weight: 600;
     font-style: normal;
-    color: #d8a7a6;
+    font-size: 3.5em;
+    color: #C93535;
+    border-bottom: 2px solid #cd8b18;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
     
   }    
 
-  .section-box img {
+  .gsection-box img {
     width: 30%;
     margin: 10px 1.5%;
     border-radius: 10px;
     vertical-align: middle;
   }
+    
+  .gsection-box p {
+    font-family: "Grandstander",  cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    color: #a06c13;
+    padding-top: 20px;
+    padding-bottom: 20;
+    width: 600px;
+    margin: 0 auto;
+    line-height: 1.3em;
+  }
+    
+  .vsection-box {
+      background-color: #E8A838;
+      border-radius: 20px;
+      border-width: 300px;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+  }
       
+   .psection-box {
+      background-color: #E8A838;
+      border-radius: 20px;
+      border-width: 700px;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+  }
   </style>
 </head>
   
@@ -149,19 +196,22 @@
     <h1> Hobbies! </h1>
     <p>check em out!</p>
     <div class="buttons">
-      <a href="#design">graphic design</a>
-      <a href="#visual">visual arts</a>
-      <a href="#photos">photos</a>
+    <a href="#design" class="button-design">graphic design</a>
+    <a href="#visual" class="button-visual">visual arts</a>
+    <a href="#photos" class="button-photos">photos</a>
     </div>
     <h3>
       ...or simply scroll if you're indecisive...
     </h3>
   </div>
   
-  <div class="section-box">
+  <div class="gsection-box">
 
   <div id="design">
-    <h2>Graphic Design</h2>
+    <h2>GRAPHIC DESIGN</h2>
+    <p>
+      Bringing random daydreams to life using photoshop and whatever images the internet throws at me!
+    </p>
     <img src="draw.jpg" alt="Tiny man drawing on a thank you card">
      <img src="jump.jpeg" alt="50's pinups jumping in crocodile infested waters">
     <img src="fish.jpeg" alt="People fish-watching in an old TV underwater">
@@ -169,17 +219,20 @@
     <img src="beans.jpeg" alt="Car representing me driving straight to coffee, literally, on a monday morning">
     <img src="apple.jpeg" alt="8-ball apple drawing">
   </div>
+</div>
 
+ <div class="vsection-box">
   <div id="visual">
     <h2>Visual Arts</h2>
     <!-- images go here -->
   </div>
-    
+</div>
+
+ <div class="psection-box">
   <div id="photos">
   <h2>Photos</h2>
     <!-- images go here -->
   </div>
-
 </div>
 </body>
   
