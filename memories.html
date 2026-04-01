@@ -6,7 +6,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Grandstander:ital,wght@0,100..900;1,100..900&family=Rock+3D&display=swap" rel="stylesheet">
-  
   <title>Ferah's Memories</title>
   <style>
     body {
@@ -29,7 +28,6 @@
     h1 {
       font-family: "Rock 3D", system-ui;
       font-weight: 600;
-      font-style: normal;
       font-size: 4em;
       color: #4d0000;
       margin-bottom: 10px;
@@ -37,30 +35,24 @@
 
     h2 {
       font-family: "Grandstander", cursive;
-      font-optical-sizing: auto;
       font-weight: 250;
-      font-style: normal;
       font-size: 1.8em;
-      line-height: 1em;
+      line-height: 1.3em;
       color: #660000;
     }
 
     h3 {
-      padding-top: 20px;
       font-family: "Grandstander", cursive;
-      font-optical-sizing: auto;
       font-weight: 500;
-      font-style: normal;
       font-size: 1em;
       line-height: 1.5em;
       color: #660000;
+      padding-top: 20px;
     }
 
     p {
       font-family: "Grandstander", cursive;
-      font-optical-sizing: auto;
       font-weight: 600;
-      font-style: normal;
       font-size: 1.3em;
       color: #660000;
       padding-top: 20px;
@@ -100,7 +92,7 @@
       border: 2px solid #4d0000;
     }
 
-    .memory-box label {
+    .memory-box > label {
       display: block;
       padding: 60px 40px;
       width: 100%;
@@ -111,7 +103,6 @@
     .memory-box h2 {
       font-family: "Rock 3D", system-ui;
       font-weight: 700;
-      font-style: normal;
       font-size: 2em;
       color: #a04746;
       margin: 0;
@@ -136,7 +127,6 @@
       background-color: rgba(77, 0, 0, 0.95);
       overflow-y: scroll;
       z-index: 10;
-      padding: 60px;
       box-sizing: border-box;
     }
 
@@ -147,17 +137,17 @@
     .overlay-inner {
       max-width: 800px;
       margin: 0 auto;
+      padding: 40px;
     }
 
     .close {
       display: block;
-      text-align: right;
-      font-size: 2em;
+      text-align: left;
+      font-size: 1.5em;
       color: #f5ede3;
-      text-decoration: none;
       font-family: "Grandstander", cursive;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .close:hover {
@@ -167,17 +157,19 @@
     .overlay h2 {
       color: #f5ede3;
       font-size: 3em;
-      margin-bottom: 20px;
+      margin: 0;
+      padding: 0;
+      line-height: normal;
     }
 
     .overlay p {
       color: #f5ede3;
       font-weight: 400;
       line-height: 1.8em;
+      padding-top: 0;
     }
   </style>
 </head>
-  
 <body>
   <a href="welcome.html" class="back">← back</a>
 
@@ -190,7 +182,7 @@
 
   <div class="grid">
 
-        <div class="memory-box">
+    <div class="memory-box">
       <input type="checkbox" id="childhood">
       <label for="childhood">
         <h2>CHILDHOOD ERA</h2>
@@ -198,35 +190,35 @@
       <div class="overlay">
         <div class="overlay-inner">
           <label for="childhood" class="close">✕ close</label>
-          <h2>childhood era</h2>
+          <h2>CHILDHOOD ERA</h2>
           <p>your content here</p>
         </div>
       </div>
     </div>
-    
-<div class="memory-box">
-  <input type="checkbox" id="uni">
-  <label for="uni">
-  <h2>UNIVERSITY LIFE</h2>
-  </label>
-    <div class="overlay">
-      <div class="overlay-inner">
-        <label for="uni" class="close">✕ close</label>
-        <h2>university life</h2>
-        <p>your content here</p>
+
+    <div class="memory-box">
+      <input type="checkbox" id="uni">
+      <label for="uni">
+        <h2>UNIVERSITY LIFE</h2>
+      </label>
+      <div class="overlay">
+        <div class="overlay-inner">
+          <label for="uni" class="close">✕ close</label>
+          <h2>UNIVERSITY LIFE</h2>
+          <p>your content here</p>
+        </div>
       </div>
     </div>
-</div>
 
     <div class="memory-box">
       <input type="checkbox" id="likes">
       <label for="likes">
-        <h2>LIKES &amp DISLIKES</h2>
+        <h2>LIKES &amp; DISLIKES</h2>
       </label>
       <div class="overlay">
         <div class="overlay-inner">
           <label for="likes" class="close">✕ close</label>
-          <h2>LIKES &amp DISLIKES</h2>
+          <h2>LIKES &amp; DISLIKES</h2>
           <p>your content here</p>
         </div>
       </div>
@@ -240,7 +232,7 @@
       <div class="overlay">
         <div class="overlay-inner">
           <label for="currently" class="close">✕ close</label>
-          <h2>CURRENTLY..</h2>
+          <h2>CURRENTLY...</h2>
           <p>your content here</p>
         </div>
       </div>
