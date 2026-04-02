@@ -170,6 +170,16 @@
       padding-top: 30px;
     }
     
+     .overlay h3 {
+      font-family: "Rock 3D", system-ui;
+      color: #b9615f;
+      font-size: 2.8em;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+      line-height: normal;
+    }
+
     .overlay .photo {
       display: inline-block;
       width: 30%;
@@ -181,16 +191,67 @@
       width: 100%;
       border-radius: 10px;
     }
+    
+    .likes-grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 20px;
+      margin-top: 20px;
+    }
 
-    .overlay .photo p {
+    .likes-col {
+      background-color: #308135;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .dislikes-col {
+      background-color: #C93535;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .likes-col h1 {
+      color: #f5ede3;
+      font-size: 2.5em;
+      padding-top: 0;
+      margin: 0 0 10px 0;
+      border-bottom: 1px solid #f5ede3; 
+    }
+
+    .dislikes-col h1 {
+      color: #f5ede3;
+      font-size: 2.5em;
+      padding-top: 0;
+      margin: 0 0 10px 0;
+      border-bottom: 1px solid #f5ede3; 
+    }
+
+    .likes-col p{
+      color: #f5ede3;
+      font-weight: 400;
+      font-size: 1em;
+      padding-top: 5px;
+      line-height: 1.6em;
+      } 
+
+    .dislikes-col p {
+      color: #f5ede3;
+      font-weight: 400;
+      font-size: 1em;
+      padding-top: 5px;
+      line-height: 1.6em;
+    }
+    
+     .overlay .photo p {
       color: #f5ede3;
       font-size: 0.9em;
       font-weight: 400;
       padding-top: 5px;
     }
-    
   </style>
 </head>
+  
 <body>
   <a href="welcome.html" class="back">← back</a>
 
@@ -360,19 +421,64 @@
       </div>
     </div>
 
-    <div class="memory-box">
-      <input type="checkbox" id="likes">
-      <label for="likes">
-        <h2>LIKES &amp; DISLIKES</h2>
-      </label>
-      <div class="overlay">
-        <div class="overlay-inner">
-          <label for="likes" class="close">✕ close</label>
-          <h2>LIKES &amp; DISLIKES</h2>
-          <p>your content here</p>
+<div class="memory-box">
+  <input type="checkbox" id="likes">
+  <label for="likes">
+    <h2>LIKES amp& DISLIKES</h2>
+  </label>
+  <div class="overlay">
+    <div class="overlay-inner">
+      <label for="likes" class="close">✕ close</label>
+      <h3>
+     FERAH'S
+      </h3>
+      <div class="likes-grid">
+        <div class="likes-col">
+          <h1>LIKES</h1>
+          <p>cats</p>
+          <p>candy</p>
+          <p>staying up late</p>
+          <p>sleeping in</p>
+          <p>people with tasteful humor</p>
+          <p>blt's</p>
+          <p>the smell of rain</p>
+          <p>napping until the sun sets</p>
+          <p>my cottage</p>
+          <p>partying with my favourite people</p>
+          <p>fun projects</p>
+          <p>billiards</p>
+          <p>other hard workers in group projects</p>
+          <p>soup</p>
+          <p>thrifting + coffee combo</p>
+          <p>"this reminded me of you"</p>
+          <p>energy drinks hitting you with optimism</p>
+          <p>hayday</p>
+        </div>
+        <div class="dislikes-col">
+          <h1>DISLIKES</h1>
+          <p>math</p>
+          <p>loud roommates</p>
+          <p>spending money on everyday essentials</p>
+          <p>brie</p>
+          <p>ping pong</p>
+          <p>"scratch disk full"</p>
+          <p>wet socks</p>
+          <p>preformative gym goers</p>
+          <p>taking more than 5 seconds to untie a shoe</p>
+          <p>being overly cold</p>
+          <p>chipping a nail</p>
+          <p>the internet taking forever to load</p>
+          <p>negative nancy's</p>
+          <p>the internet taking forever to load</p>
+          <p>public speaking</p>
+          <p>centipedes</p>
+          <p>heavy metal</p>
+          <p>rage quitting</p>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
     <div class="memory-box">
       <input type="checkbox" id="currently">
