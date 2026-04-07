@@ -49,6 +49,16 @@
       color: #660000;
       padding-top: 20px;
     }
+    
+     h4 {
+      font-family: "Grandstander", cursive;
+      font-weight: 500;
+      font-size: 1em;
+      line-height: 1.5em;
+      color: #660000;
+      padding-top: 20px;
+    }
+
 
     p {
       font-family: "Grandstander", cursive;
@@ -173,7 +183,7 @@
      .overlay h3 {
       font-family: "Rock 3D", system-ui;
       color: #b9615f;
-      font-size: 2.8em;
+      font-size: 2.2em;
       font-weight: 600;
       margin: 0;
       padding: 0;
@@ -256,7 +266,7 @@
     }
 
     .currently-item h3 {
-      font-size: 1.2em;
+      font-size: 1.5em;
       padding-top: 0;
       margin: 0 0 10px 0;
       color: #f5ede3;
@@ -270,19 +280,36 @@
       line-height: 1.6em;
     }
     
+    .currently-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+    
+     a {
+      color: #4d0000;
+      font-size: 1em;
+      font-family: "Grandstander", cursive;
+      font-weight: 600;
+    } 
+    
      .overlay .photo p {
       color: #f5ede3;
       font-size: 0.9em;
       font-weight: 400;
       padding-top: 5px;
     }
-
+    
     .c-watching   { background-color: #4A7C9E; }
     .c-reading    { background-color: #308135; }
     .c-eating     { background-color: #C93535; }
     .c-listening  { background-color: #8B4A9E; }
     .c-thinking   { background-color: #E8A838; }
     .c-working    { background-color: #E896AA; }
+    .c-could    { background-color: #ff9500; }
+    .c-proud    { background-color: #2A7A6E; }
     
   </style>
 </head>
@@ -527,31 +554,42 @@
       <div class="overlay">
         <div class="overlay-inner">
           <label for="currently" class="close">✕ close</label>
-          <h2>FERAH IS CURRENTLY...</h2>
+          <br>
+          <h3>FERAH IS CURRENTLY...</h3>
           <div class="currently-grid">
             <div class="currently-item c-watching">
               <h3>WATCHING</h3>
-              <p>your answer here</p>
+              <p>Invincible starting season 1.</p>
             </div>
             <div class="currently-item c-reading">
               <h3>READING</h3>
-              <p>your answer here</p>
+              <p>Ferah doesn't read, who are we kidding??!</p>
             </div>
             <div class="currently-item c-eating">
               <h3>EATING</h3>
-              <p>your answer here</p>
+              <p>Buffalo Ranch chicken wings + fries</p>
             </div>
             <div class="currently-item c-listening">
               <h3>LISTENING TO</h3>
-              <p>your answer here</p>
+              <p>Pink Floyd - The Wall</p>
+              <a href="https://open.spotify.com/album/5Dbax7G8SWrP9xyzkOvy2F?si=YKX0DuKAT1e5ZFXfgIxm1w" target="_blank">i want to listen!</a>
             </div>
             <div class="currently-item c-thinking">
               <h3>THINKING ABOUT</h3>
-              <p>your answer here</p>
+              <p>Louis and Linus</p>
             </div>
             <div class="currently-item c-working">
               <h3>WORKING ON</h3>
-              <p>your answer here</p>
+              <p>Harvesting the moon</p>
+            </div>
+            <div class="currently-item c-proud">
+              <h3>PROUD OF</h3>
+              <p>Figuring out how to enter Ferah's brain (coding this website)</p>
+            </div>
+            <div class="currently-item c-could">
+              <h3>COULD BE</h3>
+              <p>Emailing you!</p>
+              <a href="mailto:f2fenton@uwaterloo.ca">email me</a>
             </div>
           </div>
         </div>
